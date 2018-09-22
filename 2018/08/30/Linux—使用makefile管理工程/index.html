@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="makefile,Linux," />
 
 
 
@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="○ 姓名： 谢树浩 联系方式○ 微信： 15602215084">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://treetse.github.io/about/index.html">
+<meta name="description" content="什么是makefilemakefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元">
+<meta name="keywords" content="makefile,Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux—使用makefile管理工程">
+<meta property="og:url" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/index.html">
 <meta property="og:site_name" content="TreeTse">
-<meta property="og:description" content="○ 姓名： 谢树浩 联系方式○ 微信： 15602215084">
+<meta property="og:description" content="什么是makefilemakefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-27T03:03:36.010Z">
+<meta property="og:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/images/2018092201.jpg">
+<meta property="og:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/images/2018092202.jpg">
+<meta property="og:updated_time" content="2018-09-22T16:17:30.496Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="○ 姓名： 谢树浩 联系方式○ 微信： 15602215084">
+<meta name="twitter:title" content="Linux—使用makefile管理工程">
+<meta name="twitter:description" content="什么是makefilemakefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元">
+<meta name="twitter:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/images/2018092201.jpg">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://treetse.github.io/about/"/>
+  <link rel="canonical" href="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/"/>
 
 
 
 
 
-  <title>about | TreeTse</title>
+  <title>Linux—使用makefile管理工程 | TreeTse</title>
   
 
 
@@ -254,35 +258,206 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ShuHao Tse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534868017958&di=4e4531f771576fbd4eca81516e84f584&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F15%2F04%2F56V58PICKEa_1024.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TreeTse">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>○ 姓名： 谢树浩</p>
-<p>联系方式<br>○ 微信： 15602215084</p>
-
+          <h1 class="post-title" itemprop="name headline">Linux—使用makefile管理工程</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-30T16:26:02+08:00">
+                2018-08-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/30/Linux—使用makefile管理工程/" class="leancloud_visitors" data-flag-title="Linux—使用makefile管理工程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="什么是makefile"><a href="#什么是makefile" class="headerlink" title="什么是makefile"></a>什么是makefile</h2><p>makefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元素的相互配合，省去了繁杂的编译命令。</p>
+<h2 id="makefile的规则"><a href="#makefile的规则" class="headerlink" title="makefile的规则"></a>makefile的规则</h2><p><strong>目标（target）: 目标文件1 目标文件2</strong><br><strong><tab>gcc -o 欲建立的执行文件 目标文件1 目标文件2</tab></strong><br>在一个依赖关系里面，目标文件只能是一个文件；依赖文件可以是一个文件名，或者是Makefile变量。<br><em>在makefile当中的 # 代表批注；</em><br><em>目标文件开头的一行可以顶头写，命令的前面要用制表符分隔;</em><br><em>target与目标文件之间要以 “:”隔开。</em></p>
+<h2 id="伪目标"><a href="#伪目标" class="headerlink" title="伪目标"></a>伪目标</h2><p>所谓伪目标就是这样一个目标，它不代表一个真正的文件名，在执行make时可以指定这个目标来执行其所在规则定义的命令，有时我们将一个伪目标叫成标签。<br><strong>声明伪目标：</strong><br><strong>.PHONY:&lt;伪目标&gt;</strong><br>伪目标只是一个标签，这意味着伪目标的时间戳总是最新的，结果就是makefile每次都会去执行更新伪目标的命令。</p>
+<h2 id="看下面一个例子"><a href="#看下面一个例子" class="headerlink" title="看下面一个例子"></a>看下面一个例子</h2><p>建立一个目录make_test,在该目录下创建几个文件<br><img src="/2018/08/30/Linux—使用makefile管理工程/images/2018092201.jpg" alt="这是一张图片"></p>
+<p>prent.h文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#pragma once</span></span><br><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line">void father();</span><br><span class="line">void mother();</span><br></pre></td></tr></table></figure></p>
+<p>mother.c文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include"parent.h"</span></span><br><span class="line">void mother()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"I'm XiaoMing's mother\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>father.c文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include"parent.h"</span></span><br><span class="line">void father()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"I'm XiaoMing's father\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>main.c文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include"parent.h"</span></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"I'm XiaoMing\n"</span>);</span><br><span class="line">  father();</span><br><span class="line">  mother();</span><br><span class="line">  <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在当前目录下新建一个makefile文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">test</span>: main.o father.o mother.o</span><br><span class="line">        gcc -o <span class="built_in">test</span> main.o father.o mother.o</span><br></pre></td></tr></table></figure></p>
+<p><img src="/2018/08/30/Linux—使用makefile管理工程/images/2018092202.jpg" alt="这是一张图片"></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ShuHao Tse
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/" title="Linux—使用makefile管理工程">https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/makefile/" rel="tag"># makefile</a>
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/26/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -320,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -395,6 +579,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是makefile"><span class="nav-number">1.</span> <span class="nav-text">什么是makefile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#makefile的规则"><span class="nav-number">2.</span> <span class="nav-text">makefile的规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪目标"><span class="nav-number">3.</span> <span class="nav-text">伪目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#看下面一个例子"><span class="nav-number">4.</span> <span class="nav-text">看下面一个例子</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
