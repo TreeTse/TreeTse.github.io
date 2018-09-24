@@ -87,13 +87,13 @@
 <meta property="og:site_name" content="TreeTse">
 <meta property="og:description" content="什么是makefilemakefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/images/2018092201.jpg">
-<meta property="og:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/images/2018092202.jpg">
-<meta property="og:updated_time" content="2018-09-22T16:17:30.496Z">
+<meta property="og:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/2018092201.jpg">
+<meta property="og:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/2018092202.jpg">
+<meta property="og:updated_time" content="2018-09-24T07:22:55.993Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux—使用makefile管理工程">
 <meta name="twitter:description" content="什么是makefilemakefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元">
-<meta name="twitter:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/images/2018092201.jpg">
+<meta name="twitter:image" content="https://treetse.github.io/2018/08/30/Linux—使用makefile管理工程/2018092201.jpg">
 
 
 
@@ -373,13 +373,13 @@
         <h2 id="什么是makefile"><a href="#什么是makefile" class="headerlink" title="什么是makefile"></a>什么是makefile</h2><p>makefile是一个文本文件，是GNU make程序在执行的时候默认读取的配置文件。在执行make时，make会在当前目录下搜寻Makefile(或makefile)这个文本文件，执行其对应的操作。makefile记录了文件之间的依赖关系，通过比对目标文件和依赖文件的时间戳，决定是否需要执行相应的命令；同时，makefile还可以定义变量，接收用户传递的参数变量，通过这些元素的相互配合，省去了繁杂的编译命令。</p>
 <h2 id="makefile的规则"><a href="#makefile的规则" class="headerlink" title="makefile的规则"></a>makefile的规则</h2><p><strong>目标（target）: 目标文件1 目标文件2</strong><br><strong><tab>gcc -o 欲建立的执行文件 目标文件1 目标文件2</tab></strong><br>在一个依赖关系里面，目标文件只能是一个文件；依赖文件可以是一个文件名，或者是Makefile变量。<br><em>在makefile当中的 # 代表批注；</em><br><em>目标文件开头的一行可以顶头写，命令的前面要用制表符分隔;</em><br><em>target与目标文件之间要以 “:”隔开。</em></p>
 <h2 id="伪目标"><a href="#伪目标" class="headerlink" title="伪目标"></a>伪目标</h2><p>所谓伪目标就是这样一个目标，它不代表一个真正的文件名，在执行make时可以指定这个目标来执行其所在规则定义的命令，有时我们将一个伪目标叫成标签。<br><strong>声明伪目标：</strong><br><strong>.PHONY:&lt;伪目标&gt;</strong><br>伪目标只是一个标签，这意味着伪目标的时间戳总是最新的，结果就是makefile每次都会去执行更新伪目标的命令。</p>
-<h2 id="看下面一个例子"><a href="#看下面一个例子" class="headerlink" title="看下面一个例子"></a>看下面一个例子</h2><p>建立一个目录make_test,在该目录下创建几个文件<br><img src="/2018/08/30/Linux—使用makefile管理工程/images/2018092201.jpg" alt="这是一张图片"></p>
-<p>prent.h文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#pragma once</span></span><br><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line">void father();</span><br><span class="line">void mother();</span><br></pre></td></tr></table></figure></p>
+<h2 id="看下面一个例子"><a href="#看下面一个例子" class="headerlink" title="看下面一个例子"></a>看下面一个例子</h2><p>建立一个目录make_test,在该目录下创建几个文件<br><img src="/2018/08/30/Linux—使用makefile管理工程/2018092201.jpg" alt=""></p>
+<p>parent.h文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#pragma once</span></span><br><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line">void father();</span><br><span class="line">void mother();</span><br></pre></td></tr></table></figure></p>
 <p>mother.c文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include"parent.h"</span></span><br><span class="line">void mother()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"I'm XiaoMing's mother\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>father.c文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include"parent.h"</span></span><br><span class="line">void father()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"I'm XiaoMing's father\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>main.c文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include"parent.h"</span></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"I'm XiaoMing\n"</span>);</span><br><span class="line">  father();</span><br><span class="line">  mother();</span><br><span class="line">  <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>在当前目录下新建一个makefile文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">test</span>: main.o father.o mother.o</span><br><span class="line">        gcc -o <span class="built_in">test</span> main.o father.o mother.o</span><br></pre></td></tr></table></figure></p>
-<p><img src="/2018/08/30/Linux—使用makefile管理工程/images/2018092202.jpg" alt="这是一张图片"></p>
+<p><img src="/2018/08/30/Linux—使用makefile管理工程/2018092202.jpg" alt=""></p>
 
       
     </div>
