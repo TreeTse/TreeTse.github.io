@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C,C++," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Blogging is an attitude">
-<meta property="og:type" content="website">
-<meta property="og:title" content="TreeTse">
-<meta property="og:url" content="https://treetse.github.io/archives/index.html">
+<meta name="description" content="在能够支持这两种方式的编译器上，两者并没有很大的区别，但仍有一些细微的区别。 来看看两者的声明方式方式一：1234#ifndef _TEST_H_#define _TEST_H_......  //声明及定义语句#endif 方式二：12#pragma once...... //声明及定义语句 两者的机制#ifndef的方式依赖于宏名字不能冲突，这不光可以保证同一个文件不会被包含多次，也能保证内容">
+<meta name="keywords" content="C,C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="#pragma once与ifdef的区别">
+<meta property="og:url" content="https://treetse.github.io/2018/10/12/pragma-once与ifdef的区别/index.html">
 <meta property="og:site_name" content="TreeTse">
-<meta property="og:description" content="Blogging is an attitude">
+<meta property="og:description" content="在能够支持这两种方式的编译器上，两者并没有很大的区别，但仍有一些细微的区别。 来看看两者的声明方式方式一：1234#ifndef _TEST_H_#define _TEST_H_......  //声明及定义语句#endif 方式二：12#pragma once...... //声明及定义语句 两者的机制#ifndef的方式依赖于宏名字不能冲突，这不光可以保证同一个文件不会被包含多次，也能保证内容">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-13T06:17:21.830Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TreeTse">
-<meta name="twitter:description" content="Blogging is an attitude">
+<meta name="twitter:title" content="#pragma once与ifdef的区别">
+<meta name="twitter:description" content="在能够支持这两种方式的编译器上，两者并没有很大的区别，但仍有一些细微的区别。 来看看两者的声明方式方式一：1234#ifndef _TEST_H_#define _TEST_H_......  //声明及定义语句#endif 方式二：12#pragma once...... //声明及定义语句 两者的机制#ifndef的方式依赖于宏名字不能冲突，这不光可以保证同一个文件不会被包含多次，也能保证内容">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://treetse.github.io/archives/"/>
+  <link rel="canonical" href="https://treetse.github.io/2018/10/12/pragma-once与ifdef的区别/"/>
 
 
 
 
 
-  <title>归档 | TreeTse</title>
+  <title>#pragma once与ifdef的区别 | TreeTse</title>
   
 
 
@@ -153,7 +155,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://treetse.github.io/"><img style=
 	"position: absolute; top: 0; right: 0; border: 0;" 
@@ -251,148 +253,205 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://treetse.github.io/2018/10/12/pragma-once与ifdef的区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ShuHao Tse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534868017958&di=4e4531f771576fbd4eca81516e84f584&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F15%2F04%2F56V58PICKEa_1024.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TreeTse">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">#pragma once与ifdef的区别</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-12T23:05:35+08:00">
+                2018-10-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C/C++</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2018/10/12/pragma-once与ifdef的区别/" class="leancloud_visitors" data-flag-title="#pragma once与ifdef的区别">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/10/12/pragma-once与ifdef的区别/" itemprop="url">
-              
-                <span itemprop="name">#pragma once与ifdef的区别</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-12T23:05:35+08:00"
-              content="2018-10-12" >
-          10-12
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/30/Linux—使用makefile管理工程/" itemprop="url">
-              
-                <span itemprop="name">Linux—使用makefile管理工程</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-30T16:26:02+08:00"
-              content="2018-08-30" >
-          08-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/18/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-18T20:32:43+08:00"
-              content="2018-08-18" >
-          08-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <p>在能够支持这两种方式的编译器上，两者并没有很大的区别，但仍有一些细微的区别。</p>
+<h2 id="来看看两者的声明方式"><a href="#来看看两者的声明方式" class="headerlink" title="来看看两者的声明方式"></a>来看看两者的声明方式</h2><p>方式一：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#ifndef _TEST_H_</span></span><br><span class="line"><span class="comment">#define _TEST_H_</span></span><br><span class="line">......  //声明及定义语句</span><br><span class="line"><span class="comment">#endif</span></span><br></pre></td></tr></table></figure></p>
+<p>方式二：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#pragma once</span></span><br><span class="line">...... //声明及定义语句</span><br></pre></td></tr></table></figure></p>
+<h2 id="两者的机制"><a href="#两者的机制" class="headerlink" title="两者的机制"></a>两者的机制</h2><p>#ifndef的方式依赖于宏名字不能冲突，这不光可以保证同一个文件不会被包含多次，也能保证内容完全相同的两个文件不会被不小心同时包含。当然，缺点就是如果不同头文件的宏名不小心“撞车”，可能就会导致头文件明明存在，编译器却硬说找不到声明的状况。</p>
+<p>#pragma once则由编译器提供保证：同一个文件不会被包含多次，即能够保证头文件被编译一次。注意这里所说的“同一个文件”是指物理上的一个文件，而不是指内容相同的两个文件。带来的好处是，你不必再费劲想个宏名了，当然也就不会出现宏名碰撞引发的奇怪问题。对应的缺点就是如果某个头文件有多份拷贝，本方法不能保证他们不被重复包含。当然，相比宏名碰撞引发的“找不到声明”的问题，重复包含更容易被发现并修正。</p>
+<p><em>方式一由语言支持所以移植性好，方式二可以避免名字冲突</em><br><em>pragma once方式产生于#ifndef之后，目前#ifndef更受到推崇，因为#ifndef受语言</em><br><em>天生的支持，不受编译器的任何限制；而#pragma once方式却不受一些较老版本的编译器支持，也即，兼容性不够好</em></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ShuHao Tse
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://treetse.github.io/2018/10/12/pragma-once与ifdef的区别/" title="#pragma once与ifdef的区别">https://treetse.github.io/2018/10/12/pragma-once与ifdef的区别/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C</a>
+          
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/30/Linux—使用makefile管理工程/" rel="next" title="Linux—使用makefile管理工程">
+                <i class="fa fa-chevron-left"></i> Linux—使用makefile管理工程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -400,6 +459,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTI4My8xNTgxMA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -420,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -495,6 +572,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#来看看两者的声明方式"><span class="nav-number">1.</span> <span class="nav-text">来看看两者的声明方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两者的机制"><span class="nav-number">2.</span> <span class="nav-text">两者的机制</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -644,6 +737,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -672,6 +769,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
